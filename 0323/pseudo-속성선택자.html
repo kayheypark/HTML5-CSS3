@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 : pseudo 속성선택자</title>
+    <style>
+        h2[title] {text-decoration: underline;} /*속성 선택자*/
+        a[href^="http"]{color: orange;}
+        a[href$="html"]{text-decoration: none;}
+        a[href*="www"]{font-weight: bold;}
+        /* 시작:^, 끝:$, 포함:* */
+    </style>
+</head>
+<body>
+    <h1>CSS 선택자</h1>
+
+    <h2 title="선택자">속성 선택자</h2>
+    <p>웹 표준이 지원되는 최신의 웹브라우저에서 사용할 수 있는 선택자 방식입니다.</p>
+    <h2>속성 선택자의 다양한 활용</h2>
+    <ul>
+        <li><a href="#test.html">속성 성택자 Test</a></li>
+        <li><a href="http://www.w3c.org/">웹표준</a></li>
+    </ul>
+</body>
+</html>
