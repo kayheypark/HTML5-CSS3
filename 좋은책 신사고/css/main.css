@@ -1,0 +1,168 @@
+@import url(reset.css);
+/* main.css */
+
+/* layout */
+#wrap{width:100%;background:url(../images/bg_intro.jpg) no-repeat 50% 0;}
+	#header{position:relative;width:886px;height:124px;padding-top:18px;margin:0 auto;border:1px solid red;}
+	#container{width:910px;margin:0 auto;border:1px solid blue;}
+	#container:after{content:"";display:block;clear:both;}
+		.content1,.content2,.content3{float:left;width:292px;border:1px solid red;}
+	#footer{width:100%;background:url(../images/footer_bg.gif) repeat-x 0 0;}
+		.foot_inner{width:852px;margin:0 auto;border:1px solid red;}
+
+/* header */
+
+/* 탑메뉴 */
+dl.topMenu{float:left;}
+dl.topMenu dd{float:left;}
+
+/* 주메뉴 */
+ul.gnb{position:relative;float:right;}
+ul.gnb li{float:left;}
+ul.gnb li.nav{background:url(../images/menu_00.gif) no-repeat 100% 50%;
+			padding-right:13px;padding-left:13px;}
+ul.gnb li.nav_last{background:none;}
+
+ul.gnb li ul{display:none;position:absolute;left:0;top:20px;height:32px;
+			padding-top:11px;padding-left:15px;}
+
+ul.gnb li ul.sub1{left:0;width:294px;background:url(../images/menu_bg1.jpg) no-repeat 0 0;}
+ul.gnb li ul.sub2{left:10px;width:313px;background:url(../images/menu_bg2.jpg) no-repeat 0 0;}
+ul.gnb li ul.sub3{left:145px;width:124px;background:url(../images/menu_bg3.jpg) no-repeat 0 0;}
+ul.gnb li ul.sub4{left:160px;width:208px;background:url(../images/menu_bg4.jpg) no-repeat 0 0;}
+ul.gnb li ul.sub5{left:220px;width:150px;background:url(../images/menu_bg5.jpg) no-repeat 0 0;}
+
+ul.gnb li ul li{padding-right:12px;}
+ul.gnb li ul li a{display:block;overflow:hidden;text-indent:-9999px;height:11px;}
+
+/* sub1 */
+ul.gnb li ul li.sub1_1 a{width:38px;background:url(../images/menu_11.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_1 a:hover{background:url(../images/menu_11on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_2 a{width:51px;background:url(../images/menu_12.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_2 a:hover{background:url(../images/menu_12on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_3 a{width:18px;background:url(../images/menu_13.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_3 a:hover{background:url(../images/menu_13on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_4 a{width:54px;background:url(../images/menu_14.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_4 a:hover{background:url(../images/menu_14on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_5 a{width:52px;background:url(../images/menu_15.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub1_5 a:hover{background:url(../images/menu_15on.jpg) no-repeat 0 0;}
+
+/* sub2 */
+ul.gnb li ul li.sub2_1 a{width:56px;background:url(../images/menu_21.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_1 a:hover{background:url(../images/menu_21on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_2 a{width:56px;background:url(../images/menu_22.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_2 a:hover{background:url(../images/menu_22on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_3 a{width:66px;background:url(../images/menu_24.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_3 a:hover{background:url(../images/menu_24on.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_4 a{width:57px;background:url(../images/menu_25.jpg) no-repeat 0 0;}
+ul.gnb li ul li.sub2_4 a:hover{background:url(../images/menu_25on.jpg) no-repeat 0 0;}
+
+/* sub3 */
+ul.gnb li ul .sub3_1 a{width:38px;background:url(../images/menu_31.jpg) no-repeat}
+ul.gnb li ul .sub3_1 a:hover{background:url(../images/menu_31on.jpg) no-repeat}
+ul.gnb li ul .sub3_2 a{width:38px;background:url(../images/menu_32.jpg) no-repeat}
+ul.gnb li ul .sub3_2 a:hover{background:url(../images/menu_32on.jpg) no-repeat}
+
+/* sub4 */
+ul.gnb li ul .sub4_1 a{width:38px;background:url(../images/menu_41.jpg) no-repeat}
+ul.gnb li ul .sub4_1 a:hover{background:url(../images/menu_41on.jpg) no-repeat}
+ul.gnb li ul .sub4_2 a{width:39px;background:url(../images/menu_42.jpg) no-repeat}
+ul.gnb li ul .sub4_2 a:hover{background:url(../images/menu_42on.jpg) no-repeat}
+ul.gnb li ul .sub4_3 a{width:39px;background:url(../images/menu_43.jpg) no-repeat}
+ul.gnb li ul .sub4_3 a:hover{background:url(../images/menu_43on.jpg) no-repeat}
+ul.gnb li ul .sub4_4 a{width:20px;background:url(../images/menu_45.jpg) no-repeat}
+ul.gnb li ul .sub4_4 a:hover{background:url(../images/menu_45on.jpg) no-repeat}
+
+/* sub5 */
+ul.gnb li ul .sub5_1 a{width:59px;height:13px;background:url(../images/menu_51.jpg) no-repeat}
+ul.gnb li ul .sub5_1 a:hover{background:url(../images/menu_51on.jpg) no-repeat}
+ul.gnb li ul .sub5_2 a{width:43px;height:13px;background:url(../images/menu_52.jpg) no-repeat}
+ul.gnb li ul .sub5_2 a:hover{background:url(../images/menu_52on.jpg) no-repeat}
+
+/* 로고 */
+p.logo{position:absolute;left:408px;top:89px;}
+p.logo a{display:block;width:75px;height:52px;overflow:hidden;text-indent:-9999px;
+		background:url(../images/logo.gif) no-repeat 0 0;}
+
+/* container */
+
+/* content1 */
+div.quick_menu{width:292px;height:318px;
+			background:url(../images/mainQuicMenu_01.gif) no-repeat 0 0;}
+.quick_menu li{float:left;position:relative;left:34px;top:257px;} 
+.quick_menu li a{display:block;text-indent:-9999px;overflow:hidden;
+				border:1px solid red;width:44px;height:20px;}
+.quick_menu ul li.quick1 a{width:44px;}
+.quick_menu ul li.quick2 a{width:55px;}
+.quick_menu ul li.quick3 a{width:64px;}
+.quick_menu ul li.quick4 a{width:57px;}
+
+/* event1 */
+dl.event1_tab{position:relative;width:280px;height:107px;
+			margin-left:6px;margin-bottom:10px;
+			background:url(../images/sinsago_intro_event_03_bg.gif) no-repeat 0 0;}
+dl.event1_tab dt{z-index:3;float:left;position:relative;left:220px;top:70px;
+				margin-right:5px}
+dl.event1_tab dd{z-index:1;position:absolute;left:31px;top:15px;}
+
+/* book */
+.book_tab{position:relative;width:263px;height:83px;padding-bottom:40px}
+.book_tab dt{position:relative;left:20px;top:68px;z-index:2;
+			float:left;padding-right:5px}
+.book_tab dd{position:absolute;left:0;top:0;z-index:1;padding-left:17px;}
+
+/* content2 */
+div.ssen{width:292px;height:318px;
+		background:url(../images/mainQuicMenu_02.gif) no-repeat 0 0;}
+div.ssen li{float:left;position:relative;left:22px;top:250px;}
+div.ssen li a{display:block;width:58px;height:24px;
+			text-indent:-9999px;overflow:hidden;border:1px solid red;}
+
+/* event2 */
+.event2_tab{position:relative;width:280px;height:107px;margin-bottom:10px;margin-left:6px;background:url(../images/sinsago_intro_event_02_bg.gif) no-repeat}
+.event2_tab dt{position:relative;left:220px;top:70px;z-index:2;
+			float:left;padding-right:5px}
+.event2_tab dd{position:absolute;left:31px;top:15px;z-index:1}
+
+/* teacher */
+.teacher_tab{position:relative;width:266px;height:83px;}
+.teacher_tab dt{position:relative;left:15px;top:68px;z-index:2;
+				float:left;padding-right:5px}
+.teacher_tab dd{position:absolute;left:0;top:0;z-index:1;padding-left:12px;}
+
+/* content3 */
+div.him{position:relative;width:292px;height:318px;
+		background:url(../images/mainQuicMenu_03.gif) no-repeat 0 0;}
+div.him li{}
+div.him li a{position:absolute;left:37px;bottom:44px;
+			/*display:block;*/overflow:hidden;height:20px;width:37px;
+			text-indent:-9999px;border:1px solid red;}
+.him li.qhim1 a{left:37px;width:37px;}
+.him li.qhim2 a{left:75px;width:70px;}
+.him li.qhim3 a{left:146px;width:59px;}
+.him li.qhim4 a{left:205px;width:52px;}
+
+/* event3 */
+.event3_tab{position:relative;width:280px;height:107px;margin-bottom:10px;margin-left:7px;background:url(../images/sinsago_intro_event_01_bg.gif) no-repeat}
+.event3_tab dt{position:relative;left:220px;top:70px;z-index:2;
+				float:left;padding-right:5px}
+.event3_tab dd{position:absolute;left:31px;top:15px;z-index:1}
+
+/* brand */
+.brand_tab{position:relative;width:263px;height:83px;}
+.brand_tab dt{position:relative;left:18px;top:68px;z-index:2;
+			float:left;padding-right:5px}
+.brand_tab dd{position:absolute;left:0;top:0;z-index:1;padding-left:12px}
+
+/* footer */
+/* foot_inner */
+ul.foot_nav{float:left;padding-top:8px;padding-bottom:25px}
+ul.foot_nav li{float:left;}
+
+.foot_inner p{float:right;padding-top:8px}
+
+address{clear:both;text-align:center;padding-bottom:23px}
+
+.foot_banner{padding-left:127px;overflow:auto;}
+.foot_banner li{float:left;padding-right:25px}
+
