@@ -1,2 +1,60 @@
 @import url(reset.css);
 
+/*일반*/
+body {
+    
+    background: url(../images/bg_body.gif) repeat-x 0 18px;
+    
+    font-family: Dotum, "돋움", sans-serif; font-size: 12px;}
+
+#wrap {width: 1000px; margin: 0 auto; border: 1px solid red;}
+#header {position: relative; margin-top: 20px; border: 1px solid blue;}
+#container {border: 1px solid yellow;}
+#footer {border: 1px solid blue;}
+#quick {border: 1px solid black;}
+
+/*:after*/
+#header:after {content: ""; display: block; clear: both;}
+#container:after {content: ""; display: block; clear: both;}
+#footer:after {content: ""; display: block; clear: both;}
+#quick:after {content: ""; display: block; clear: both;}
+
+
+/* 탑메뉴 */
+.topMenu {position: absolute; top: -10px; right: 0;}
+.topMenu dd {float: left;}
+h1.logo {}
+
+/*주메뉴*/
+
+.gnb {float: right; margin-top: -70px;}
+.gnb li {float: left;}
+.gnb li ul li {display: none;}
+
+/*메인비주얼 (왼쪽이미지)*/
+.main_visual {float: left; margin-right: 30px;}
+
+/*컨텐츠*/
+.content {float: left; margin-top: 15px; margin-bottom: 15px;}
+
+.search fieldset {padding: 5px 0px 0 20px;  width: 381px; height: 37px; background:url(../images/bg_mainsearch.gif) no-repeat 0px 0px;}
+.search input {width: 240px; height: 20px; }
+
+
+.tabMenu {padding-top: 10px; padding-bottom: 15px; width: 381px; height: 150px;}
+.tabMenu > dt {float: left;  margin-right: 25px; width: 59px; height: 27px; }
+.tabMenu dd {position: relative;}
+.tabMenu dd ul {position: absolute; top: 60px; line-height: 20px;}
+.tabMenu dd p {position: absolute; top: 0px; right: 0;}
+.tabMenu dd ul li span {float: left; color: #757559; font-weight: bold;}
+.tabMenu dd ul li a {float: left; padding-left: 30px; color: #797979; text-decoration: none;}
+.tabMenu dd ul li a:hover {color: #111;}
+.tabMenu dd p {position: absolute;}
+
+
+.gallery {position: relative; border: 1px solid green; height: 150px;}
+.gallery h3 {position: relative; width: 381px; height: 33px; background: url(../images/bg_gbox_tp.gif) no-repeat 0 0;}
+.gallery h3 img {position: absolute; top: 6px; left: 15px;}
+.gallery .img { float: left; width: 94px; height: 81px; background: url(../images/bg_gall_photo.gif) no-repeat 0 0;}
+.gallery .txt {}
+.gallery .more {position: absolute; top: 0; right: 20px;}

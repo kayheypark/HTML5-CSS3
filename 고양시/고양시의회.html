@@ -24,7 +24,8 @@
     <div id="wrap">
         <!-- header -->
         <div id="header">
-            <dl>
+            <!-- topMenu-->
+            <dl class="topMenu">
                 <dt class="blind">탑메뉴</dt>
                 <dd><a href="#"><img src="images/img_home.gif" alt="홈" /></a></dd>
                 <dd><a href="#"><img src="images/img_sitemap.gif" alt="사이트맵" /></a></dd>
@@ -33,19 +34,29 @@
                 <dd><a href="#"><img src="images/img_default.gif" alt="기본값" /></a></dd>
                 <dd><a href="#"><img src="images/img_zoomout.gif" alt="축소" /></a></dd>
             </dl>
-            <h1><a href="#"><img src="images/logo.gif" alt="고양시의회 Goyang City Council" /></a></h1>
+            <!-- //topMenu 끝-->
+            <h1 class="logo"><a href="#"><img src="images/logo.gif" alt="고양시의회 Goyang City Council" /></a></h1>
             <!-- gnb -->
             <h2 class="blind">주메뉴</h2>
             <ul  id="gnb" class="gnb">
-                <li><a href="#"><img src="images/img_lnb01.gif" alt="의회소개" /></a></li>
-                <li><a href="#"><img src="images/img_lnb02.gif" alt="의장실" /></a></li>
-                <li><a href="#"><img src="images/img_lnb03.gif" alt="의원소개" /></a></li>
-                <li><a href="#"><img src="images/img_lnb04.gif" alt="의정활동" /></a></li>
-                <li><a href="#"><img src="images/img_lnb05.gif" alt="회의록검색" /></a></li>
-                <li><a href="#"><img src="images/img_lnb06.gif" alt="의회소식" /></a></li>
-                <li><a href="#"><img src="images/img_lnb07.gif" alt="상임위원회" /></a></li>
-                <li><a href="#"><img src="images/img_lnb08.gif" alt="열린공간" /></a></li>
-                <li><a href="#"><img src="images/img_lnb09.gif" alt="행정자료실" /></a></li>
+                <li class="menu1">
+                    <a href="#"><img src="images/img_lnb01.gif" alt="의회소개" /></a>
+                    <ul>
+                        <li class="first"><a href="#">의회연혁</a></li>
+                        <li><a href="#">조직/구성</a></li>
+                        <li><a href="#">의회기능</a></li>
+                        <li><a href="#">의원윤리강령</a></li>
+                        <li class="last"><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb02.gif" alt="의장실" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb03.gif" alt="의원소개" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb04.gif" alt="의정활동" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb05.gif" alt="회의록검색" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb06.gif" alt="의회소식" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb07.gif" alt="상임위원회" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb08.gif" alt="열린공간" /></a></li>
+                <li class="menu2"><a href="#"><img src="images/img_lnb09.gif" alt="행정자료실" /></a></li>
             </ul>
             <!-- //gnb 끝 -->
         </div>
@@ -53,21 +64,23 @@
         <hr />
         <!-- container -->
         <div id="container">
-            <a href="#"><img src="images/visual.jpg" alt="감동과 희망을 드리는 고양시의회 Goyang City Council" /></a>
+            <a href="#" class="main_visual"><img src="images/visual.jpg" alt="감동과 희망을 드리는 고양시의회 Goyang City Council" /></a>
             <!-- content -->
             <div class="content">
                 <!-- search -->
-                <h3>검색</h3>
+                <h3 class="blind">검색</h3>
                 <div class="search">
-                    <img src="images/ttl_search.gif" alt="통합검색" />
-                    <input type="text" title="검색창">
-                    <a href="#"><img src="images/btn_main_search.gif" alt="검색" /></a>
+                    <fieldset>
+                        <img src="images/ttl_search.gif" alt="통합검색" />
+                        <input type="text" title="검색창">
+                        <a href="#"><img src="images/btn_main_search.gif" alt="검색" /></a>
+                    </fieldset>
                 </div>
                 <!-- //search 끝 -->
                 <!-- tabMenu -->
-                    <h3>게시판 미리보기</h3>
+                    <h3 class="blind">게시판 미리보기</h3>
                     <dl id="tabMenu" class="tabMenu">
-                        <dt><a href="#menu1" class="tab"><img src="images/tab_b01_on.gif" alt="공지사항" /></a></dt>
+                        <dt><a href="#menu1" class="tab"><img src="images/tab_b01_off.gif" alt="공지사항" /></a></dt>
                         <dd id="menu1">
                             <ul>
                                 <li><span>2010-12-21</span><a href="#">2011년도 연간 의회 운영 기본계획</a></li>
@@ -108,21 +121,31 @@
                             <p><a href="#"><img src="images/btn_more.gif" alt="언론보도 더보기"></a></p>
                         </dd>
                     </dl>
+                    <script type="text/javascript">
+                    initTabMenu("tabMenu");
+                    </script>
+
                 <!-- //tabMenu 끝 -->
                 <!-- gallery -->
                 <div class="gallery">
                     <h3><img src="images/ttl_gallery.gif" alt="의정활동갤러리" /></h3>
-                    <ul>
-                        <li><a href="#"><img src="images/1.JPG" width="200" height="120" alt="제 7의 고양시" /></a></li>
-                        <li><a href="#"><img src="images/2.JPG" width="200" height="120" alt="제 60주기 고.." /></a></li>
-                        <li><a href="#"><img src="images/3.JPG" width="200" height="120" alt="제5회자원봉.." /></a></li>
-                    </ul>
-                    <p><a href="#"><img src="images/btn_more.gif" alt="의정활동갤러리 더보기"></a></p>
+                        <dl>
+                            <dt class="txt"><a href="#">제 7의 고양시</a></dt>
+                            <dd class="img"><a href="#"><img src="images/1.JPG" width="84" height="60" alt="제 7의 고양시" /></a></dd>
+                            <dt class="txt"><a href="#">제 60주기 고..</a></dt>
+                            <dd class="img"><a href="#"><img src="images/2.JPG" width="84" height="60" alt="제 60주기 고.." /></a></dd>
+                            <dt class="txt"><a href="#">제5회자원봉..</a></dt>
+                            <dd class="img"><a href="#"><img src="images/3.JPG" width="84" height="60" alt="제5회자원봉.." /></a></dd>
+                        </dl>
+                        <p class="more"><a href="#"><img src="images/btn_more.gif" alt="의정활동갤러리 더보기"></a></p>
+
+
+
                 </div>
                 <!-- //gallery 끝 -->
                 <!-- mainBanner -->
                 <div class="mainBanner">
-                    <h4>인기 메뉴</h4>
+                    <h4 class="blind">인기 메뉴</h4>
                     <ul>
                         <li><a href="#"><img src="images/btn_main01.gif" alt="참여의원" /></a></li>
                         <li><a href="#"><img src="images/btn_main02.gif" alt="회의록동영상" /></a></li>
@@ -152,18 +175,18 @@
                 <p><a href="#"><img src="images/btn_bannerup.gif" alt="이전 사이트 배너"></a></p>
                 <p><a href="#"><img src="images/btn_bannerdown.gif" alt="다음 사이트 배너"></a></p>
 
-                <h5>관련사이트</h5>
+                <h5 class="blind">관련사이트</h5>
                 <ul>
                     <li><a href="#"><img src="images/ban_01.gif" alt="고양시청"></a></li>
                     <li><a href="#"><img src="images/ban_02.gif" alt="일산종합사회복지관"></a></li>
-                    <li><a href="#"><img src="images/ban_03.gif" alt="롯데카드 포인트 정치후원금 기부"></a></li>
+                    <li><a href="#"><img src="images/ban_03.jpg" alt="롯데카드 포인트 정치후원금 기부"></a></li>
                 </ul>
             </div>
         </div>
         <!-- //footer 끝 -->
         <hr />
         <!-- quick -->
-        <h4>퀵메뉴</h4>
+        <h4 class="blind">퀵메뉴</h4>
         <div id="quick" class="quick">
             <ul>
                 <li class="first"><a href="#"><img src="images/ttl_quick.gif" alt="바로가기" /></a></li>
