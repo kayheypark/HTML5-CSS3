@@ -1,0 +1,62 @@
+@import url(reset.css);
+/* main.css */
+
+/* common */
+body{font-size:12px;font-family:Dotum,"돋움",sans-serif;color:#666;
+	text-align:center;background:url(../images/bg_main_x.gif) repeat-x 0 610px;}
+a{text-decoration:none;}
+
+/* layout */
+#wrap{width:1024px;margin:0 auto;text-align:left;padding-top:48px;}
+	#header{position:relative;width:1024px;height:107px;}
+	#container{width:1024px;}
+		.mainFlash{width:980px;height:455px;}
+		#content{width:794px;height:125px;padding:30px 0 0 230px;
+			background:url(../images/img_main_05.gif) no-repeat 0 0;}
+	#footer{width:1024px;height:90px;padding-top:20px;}
+
+/* header */
+h1.logo{}
+
+/* 탑메뉴 */
+dl.topMenu{position:absolute;right:0;top:0;}
+dl.topMenu dd{float:left;padding-right:7px;margin-right:3px;
+		background:url(../images/bul_dot.gif) no-repeat 100% 50%;}
+dl.topMenu dd.last{background:none;padding-right:0;margin-right:0;}
+
+/* 주메뉴 */
+ul.gnb{position:absolute;right:0;top:20px;}
+.gnb li{float:left;padding-right:20px;}
+.gnb li ul{display:none;position:absolute;left:0;top:20px;}
+.gnb li.menu ul{left:0;}
+.gnb li.menu2 ul{left:151px;}
+.gnb li.menu3 ul{left:280px;}
+.gnb li.menu4 ul{left:364px;}
+.gnb li.menu5 ul{left:380px;}
+.gnb li.menu6 ul{left:420px;}
+.gnb li ul li{background:#609b27;height:21px;line-height:21px;}
+.gnb li ul li.first{padding-left:20px;
+		background:#609b27 url(../images/round_first.gif) no-repeat 0 0;}
+.gnb li ul li.end{background:#609b27 url(../images/round_end.gif) no-repeat 100% 0;}
+.gnb li ul li a{color:#fff;}
+.gnb li ul li a:hover{color:yellow;}
+
+/* container */
+/* mainFlash */
+/* content */
+div.notice,div.faq{position:relative;float:left;width:202px;margin-right:50px;}
+div.site{float:left;width:202px;}
+
+#content h3{margin-bottom:10px;}
+#content li{line-height:150%;color:#fff;}
+#content li span{position:absolute;right:0;}
+#content a{color:#fff;}
+#content .more{position:absolute;right:0;top:0;}
+
+/* footer */
+p.footlogo{float:left;margin-right:20px;}
+
+address{float:left;padding-top:10px;}
+address span{display:block;padding-top:10px;}
+
+p.tel{float:right;}
