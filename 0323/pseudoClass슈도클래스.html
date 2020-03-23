@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 : pseudo-class 슈도 클래스</title>
+
+    <style>
+        li {
+            float: left;
+            margin-right: 30px;
+            list-style: none;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li:first-child {background: #000;}
+        li:last-child {background: gray;}
+
+        /* :nth-child() 항목중에서 n번째 자식을 선택 */
+        /* 홀수 */
+        li:nth-child(odd) {color: red;}
+        /* 짝수 */
+        li:nth-child(even) {color: blue;}
+        /* 3배수 */
+        li:nth-child(3n) {color: yellow;}
+        /* 5번째 */
+        li:nth-child(5) {color: black;}
+        /* nth-last-child(m) 끝에서 n번째 자식을 선택 */
+        li:nth-last-child(1) {color: orange;}
+        /* :empty 빈 항목 선택 (텍스트, 공백 없어야 함) */
+        li:empty {border: 1px solid red; padding: 50px;}
+
+
+        dd:nth-of-type(2) {}
+        /* 
+        
+        :nth-of-type(n) 유형이 같은 n번째 선택
+        :nth-last-of-type(n) 유형이 같은 n번째 선택, 뒤에서부터
+        :first-of-type 해당 유형의 첫번째 항목선택
+        :last-of-type 해당 유형의 첫번째 항목선택, 뒤에서부터
+
+        :only-child 유일한 자식선택
+        :only-of-type 유일한 유형선택
+        
+        
+        
+         */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+        <li> 4 </li>
+        <li> 5 </li>
+        <li> 6 </li>
+        <li> 7 </li>
+        <li></li>
+        <li> 9 </li>
+    </ul>
+</body>
+
+</html>
