@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css3 : 애니메이션</title>
+    <title>css3 : 애니메이션 시계</title>
     <style>
-        body {margin: 0;padding: 0; background: url(ruler.jpg) no-repeat 0 0;}
-        div {position: relative;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        border:2px solid black;
-        background: url(f1.png) no-repeat 0 0;
-        
-        animation: ani 23400s linear 0s infinite alternate;
-        }
+        body {margin: 100px; padding: 100px;}
+section{position: relative; width: 600px; height: 600px; border: 10px solid #111; border-radius: 300px;}
+
+div {position: absolute; left: 50%; bottom: 50%; width: 10px; height: 300px;}
+div:first-child {background: red; height: 100px; animation:ani 43200s linear 0s infinite alternate; }
+div:nth-child(2) {background: green; height: 200px; animation:ani 3600s linear 0s infinite alternate;}
+div:last-child {background: blue; height: 300px; animation:ani 60s linear 0s infinite alternate;}
+
+
+
 
         @keyframes ani {
-            0% {left: 0; border: 20px solid red;}
-            50% {top: 50px; border: 20px solid blue;}
-            100% {left: 1000px; border: 20px solid yellow;}
+            0% {transform: rotate(0deg); transform-origin: center bottom;}
+            100% {transform: rotate(360deg); transform-origin: center bottom;}
             
         }
 
@@ -50,6 +49,10 @@ animation-play-state : 애니메이션의 실행 상태를 설정, paused
     </style>
 </head>
 <body>
+    <section>
     <div></div>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
