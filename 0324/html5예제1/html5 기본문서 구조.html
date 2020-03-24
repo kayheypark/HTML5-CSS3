@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!--
+[if lt IE 9] 
+<script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js""></script>
+![endif] -->
+
+<!-- 조건주석문 -->
+    <title>html5 기본 문서 구조</title>
+</head>
+<body>
+    <!-- html5 시멘틱 웹 [semantic web] : 의미가 더 명확해진다.
+    header, footer, nav, section(이전 html에서 하나의 주제<div class-"notice">같은 것들. 하나로 묶는 것들), article(단독으로 사용할 수 있는 것), aside -->
+ <div id="wrap">
+     <header>
+        <h1>제목</h1>
+        <h2>부제목</h2>
+        <nav>
+            <h2>주메뉴</h2>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </nav>
+     </header>
+     <div id="container">
+        <div id="content">
+            <section class="notice">
+                <h3>제목:경제</h3>
+                <ul></ul>
+                <p></p>
+            </section>
+            <section class="qna">
+                <h3>제목:스포츠</h3>
+                <ul></ul>
+                <p></p>
+            </section>
+            <article>
+                <h3>제목</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </article>
+        </div>
+        <aside>
+            <h3>제목</h3>
+            <ul>
+                <li>내용1</li>
+                <li>내용2</li>
+                <li>내용3</li>
+            </ul>
+        </aside>
+     </div>
+     <footer>&copy; copyright</footer>
+ </div>
+</body>
+</html>
