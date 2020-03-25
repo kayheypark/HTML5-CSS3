@@ -147,7 +147,9 @@ aside article:nth-of-type(4) h3 {font-size: 21px; text-align: center; letter-spa
 /* 4 */
 #container aside article:last-of-type{height: 140px; text-align: center;}
 #container aside article:last-of-type h3 {font-size: 23px;}
-input[type="button"] {font-size: 28px;
+input[type="button"] {
+    display: block;
+    font-size: 28px;
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
