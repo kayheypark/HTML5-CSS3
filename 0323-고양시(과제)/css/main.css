@@ -20,10 +20,10 @@ a:hover {
 /* layout */
 #wrap {width: 100%; background: url(../images/bg_body.gif) repeat-x 0 0; text-align: left;}
     #header {position: relative; width: 980px; height: 93px; margin: 0 auto;}
-    #container {position: relative; width: 980px; margin: 0 auto; border: 1px solid green;}
+    #container {position: relative; width: 980px; margin: 0 auto;}
     #container:after {content: ""; display: block; clear: both;}
-        .mainFlash {float: left; width: 480px; height: 510px; border: 1px solid yellow;}
-        #content {float: left; width: 381px; border: 1px solid yellow;}
+        .mainFlash {float: left; width: 480px; height: 510px;}
+        #content {float: left; width: 381px;}
         #quick {position: absolute; right: 40px;}
     #footer {width: 100%; border-top: 1px solid olive;}
         .foot_inner {width: 980px; height: 109px; margin: 0 auto; border: 1px solid blue;}
@@ -87,9 +87,19 @@ dl.tab_noti dd ul li span {color: olive; font-size: 11px;padding: 0 15px;}
 dl.tab_noti dd p.more {position: absolute; top: -27px; right: 0;}
 
 /* 의정활동갤러리 */
-div.gallery {}
-div.gallery h3 {width: 381px; height: 33px;
+div.gallery {position: relative; width: 381px; margin-bottom: 14px;
+            background: url(../images/bg_gbox_ct.gif) repeat-y 0 0;}
+div.gallery h3 {width: 370px; height: 27px; padding-left: 11px; padding-top: 6px;
     background: url(../images/bg_gbox_tp.gif) no-repeat 0 0;}
-div.gallery ul {}
-div.gallery p.more {}
+div.gallery ul {width: 381px; padding-bottom: 10px;
+                background: url(../images/bg_gbox_bt.gif) no-repeat 0 100%;}
+div.gallery ul:after {content: ""; display: block; clear: both;}
+div.gallery ul li {float: left; margin-left: 20px; text-align: center; font-weight: bold;}
+div.gallery ul li span {width: 94px; height: 81px; display: block;
+    background: url(../images/bg_gall_photo.gif) no-repeat 0 0;
+    text-align: center;}
+div.gallery p.more {position: absolute; right: 10px; top: 6px;}
 /* 배너 */
+ul.banner {width: 381px;}
+ul.banner li {float: left; padding-right: 3px;}
+ul.banner li:nth-child(3),ul.banner li:last-child {padding-right: 0px;}
