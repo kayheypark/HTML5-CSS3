@@ -47,6 +47,20 @@ ul.gnb li ul.menu7 {left: 330px;}
 ul.gnb li ul.menu8 {left: 550px;}
 ul.gnb li ul.menu9 {left: 390px;}
 
+/* 
+
+ul.gnb li:first-child ul {}
+ul.gnb li:nth-child(2) ul {}
+ul.gnb li:nth-child(3) ul {}
+.
+.
+.
+ul.gnb li:nth-child(7) ul {}
+ul.gnb li:nth-child(8) ul {}
+ul.gnb li:last-child ul {}
+
+*/
+
 ul.gnb li ul li {padding-right: 10px;}
 ul.gnb li ul li a {color: #816d15;}
 
@@ -54,4 +68,15 @@ ul.gnb li ul li a {color: #816d15;}
 /* containter */
 /* content */
 /* 통합검색 */
+form.tsearch {width: 371px; height: 32px; margin: 15px 0; text-align: right;
+            padding-right: 10px; padding-top: 5px;
+             background: url(../images/bg_mainsearch.gif) no-repeat 0 0;}
+
+/*.input_txt,*/ input[type="search"] {width: 230px; height: 22px; border: 1px solid #98a948;
+
+border-right: none;
+}
+
 /* 공지사항 */
+/* 의정활동갤러리 */
+/* 배너 */
