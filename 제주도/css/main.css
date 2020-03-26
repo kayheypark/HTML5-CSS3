@@ -7,7 +7,7 @@ body {
     font-family: Dotum, "돋움", sans-serif;
     color: #777;
     background: url(../images/bg.gif) repeat-x 0 25px;
-    padding-top: 50px;
+        padding-top: 50px;
     
 }
 
@@ -20,19 +20,18 @@ a:hover {
     text-decoration: underline;
 }
 /* layout */
-#wrap {}
+
 #header {width: 1100px;margin: 0 auto;}
     h1.logo {}
         .gnb {}
 #header:after {content: ""; display: block; clear: both;}
 #container {width: 1100px; padding-top: 50px; margin: 0 auto;}
-    div.content1 {float: left; width: 650px; border: 1px solid red;}
-    div.content2 {float: left; width: 370px; padding-left: 50px; border: 1px solid red;}
+    div.content1 {float: left; width: 650px; }
+    div.content2 {float: left;  padding-left: 0px; margin-bottom: 20px; }
     .site_all {}
+    .site_all::after{content: ""; display: block; clear: both;}
         .site_inner {}
-
-        .site_all:before{content: ""; display: block; clear: both;}
-#footer {width: 1100px; margin: 0 auto; border: 1px solid blue;}
+#footer {width: 1100px; margin: 0 auto; padding: 20px 0;}
 /* header */
 
 /* 로고 */
@@ -62,7 +61,7 @@ input[type="image"] {margin-bottom: 9px;}
 
 /* containter */
 /* content1 */
-.content1 img {padding-bottom: 0px;}
+.content1 img { padding-bottom: 0px;}
 /* 로그인 */
 .login {float: left; width: 230px;  margin-top: 15px;}
 /* 로그인왼쪽정렬묶음(ID,PW) */
@@ -118,14 +117,38 @@ div.info form {float: right;}
 
 div.info form input[type="text"] {width: 70px;}
 div.info form  fieldset { width: 150px; margin-top: 10px;}
-.info_border {padding-top: 10px; margin-top: 7px; width: 350px; height: 105px;  border: 1px solid #ddd;  }
+.info_border {padding-top: 10px; margin-top: 7px; width: 322px; height: 105px;  border: 1px solid #ddd;  }
 
 /* 포토갤러리 */
-.gallery {border: 1px so    ;}
-.gallery h3 {}
+.gallery {padding: 5px 2px 5px 5px; border: 1px solid #ddd;margin-top: 4px; width: 320px;}
+.gallery:after {content: ""; display: block; clear: both;}
+.gallery h3 {float: left; padding-top: 7px; padding-right: 2px;}
 .gallery ul {}
-.gallery ul li {}
+.gallery ul li {float: left; padding-left: 5px;}
 .gallery ul li:first-child {}
 .gallery ul li:nth-of-type(2) {}
 .gallery ul li:nth-of-type(3) {}
 .gallery ul li:last-child {}
+
+/* 관련사이트 */
+.site_all {clear: both; background: #eae9ee; padding: 15px 0;}
+.site_inner {width: 1000px;}
+.site_inner:after {content: ""; display: block; clear: both;}
+
+    /* 레이아웃 */
+    .site_inner div {float: left; padding-right: 28px;}
+
+    /* 3단설정, 줄간격 */
+    .site_inner ul {float: left;}
+    .site_inner ul li {line-height: 1.5;}
+    .site_inner .site1 ul {column-count: 3; column-gap: 25px;}
+
+    /* 제목 */
+    .site_inner h3 {float: left; padding-right: 38px;}
+
+/* footer */
+#footer:after {content: ""; display: block; clear: both;}
+#footer p {float: left;}
+#footer address {float: left; padding-left: 20px; padding-top: 7px;}
+#footer address a:first-child {}
+#footer address a:last-child {display: block;}
