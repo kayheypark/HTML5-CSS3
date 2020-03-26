@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주특별자치도 사회복지협의회</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
 
 </head>
 <body>
+<!-- wrap -->
+<div id="wrap">
     <!-- 스킵메뉴 -->
     <div id="skipNavi">
         <ul>
@@ -23,23 +28,23 @@
         <h1 class="logo"><a href="#"><img src="images/logo.gif" alt="제주특별자치도사회복지협의회 JEJU COUNCIL ON SOCIAL WELFARE" /></a></h1>
         <!-- //로고 -->
         <!-- 통합검색 -->
-        <form action="/" method="POST">
+        <form action="/" method="POST" class="tsearch">
             <fieldset>
-                <legend>검색하기</legend>
-                <select name="search" id="">
+                <legend class="blind">검색하기</legend>
+                <select name="search" id="search">
                     <option value="">통합검색</option>
                     <option value="title">제목</option>
                     <option value="comment">댓글</option>
                     <option value="writer">작성자</option>
                 </select>
                 <input id="search" type="search" />
-                <input type="submit" value="검색" />
+                <input type="image" src="images/btn_search.gif" />
             </fieldset>
         </form>
         <!-- //통합검색 -->
         <!-- 탑메뉴 -->
         <dl class="topMenu">
-            <dt>탑메뉴</dt>
+            <dt class="blind">탑메뉴</dt>
             <dd><a href="#"><img src="images/tmenu01.gif" alt="홈으로" /></a></dd>
             <dd><a href="#"><img src="images/tmenu02.gif" alt="로그인" /></a></dd>
             <dd><a href="#"><img src="images/tmenu03.gif" alt="회원가입" /></a></dd>
@@ -50,7 +55,7 @@
         <!-- 주메뉴 전체 -->
         <div class="gnb_all">
             <!-- 주메뉴 -->
-            <h2>주메뉴</h2>
+            <h2 class="blind">주메뉴</h2>
             <ul id="gnb" class="gnb">
                 <li><a href="#menu1"><img src="images/menu1.gif" alt="마산합포구소개"></a>
                     <ul id="menu1">
@@ -118,6 +123,9 @@
                     </ul>
                 </li>
             </ul>
+            <script type="text/javascript">
+            
+            </script>
             <!-- //주메뉴 -->
         </div>
         <!-- //주메뉴 전체 -->
@@ -133,17 +141,23 @@
                 <form action="/" method="POST" class="login">
                 <fieldset>
                     <legend><img src="images/login_top.gif" alt="MEMBER LOGIN 회원 아이디와 비밀번호를 입력해주세요"></legend>
-                    <label for="userId"><img src="images/login_id.gif" alt="ID"></label>
-                    <input id="userId" type="text" />
-                    <label for="userPw"><img src="images/login_pass.gif" alt="PASS"></label>
-                    <input id="userPw" type="password" />
-                    <input type="image" src="images/btn_login.gif" title="로그인" />
-                    <input id="saveId" type="checkbox" />
-                    <label for="saveId">아이디저장</label>
-                    <input id="safeLogin" type="checkbox" />
-                    <label for="safeLogin">보안접속</label>
-                    <p><a href="#"><img src="images/btn_id.gif" alt="아이디/비밀번호찾기"></a></p>
-                    <p><a href="#"><img src="images/btn_join.gif" alt="아이디/비밀번호찾기"></a></p>
+                    <div class="login_left">
+                        <label class="id_img" for="userId"><img src="images/login_id.gif" alt="ID"></label>
+                        <input id="userId" type="text" />
+                        <label class="pw_img" for="userPw"><img src="images/login_pass.gif" alt="PASS"></label>
+                        <input id="userPw" type="password" />
+                    </div>
+                    <input type="image" src="images/btn_login.gif" alt="로그인" />
+                    <div class="login_checkbox">
+                        <input id="saveId" type="checkbox" />
+                        <label for="saveId">아이디저장</label>
+                        <input id="safeLogin" type="checkbox" />
+                        <label for="safeLogin">보안접속</label>
+                    </div>
+                    <div class="login_find">
+                        <a href="#"><img src="images/btn_id.gif" alt="아이디/비밀번호찾기"></a>
+                        <a href="#"><img src="images/btn_join.gif" alt="아이디/비밀번호찾기"></a>
+                    </div>
                 </fieldset>
                 </form>
             <!-- //login -->    
@@ -198,6 +212,9 @@
                     <p class="more"><a href="#"><img src="images/btn_more.gif" alt="교육안내 더보기"></a></p>
                 </dd>
             </dl>
+            <script type="text/javascript">
+            initTabMenu("tab_noti");
+            </script>
             <!-- //tab_noti -->    
         </div>
         <!-- //content1 -->
@@ -208,9 +225,9 @@
 				<h2 class="blind">교육신청,시설이용신청,제주시회복지현황</h2>
                 <img src="images/banner.gif" alt="배너" />
 				<ul>
-					<li class="quick1"><a href="#">교육신청</a></li>
-					<li class="quick2"><a href="#">시설이용신청</a></li>
-					<li class="quick3"><a href="#">제주시회복지현황</a></li>
+					<li class="quick1" title="교육신청"><a href="#"></a></li>
+					<li class="quick2" title="시설이용신청"><a href="#"></a></li>
+					<li class="quick3" title="제주시회복지현황"><a href="#"></a></li>
 				</ul>
             </div>
             <!-- //quick -->
@@ -218,43 +235,43 @@
             <h3 class="blind">제주사회복지신문, 제주시후원나눔, 노인복지정책, 자원봉사안내, 다자녀가구지원혜택</h3>
             <dl id="tab_banner" class="tab_banner">
                 <dt><a href="#t1" class="tab"><img src="images/num01.gif" alt="E-BOOK" /></a></dt>
-                <dd id="t1"><a href="#"><img src="images/ban01.jpg" alt="제주사회복지신문. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dㅇ>
+                <dd id="t1"><a href="#"><img src="images/ban01.jpg" alt="제주사회복지신문. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dd>
                 
                 <dt><a href="#t2" class="tab"><img src="images/num02.gif" alt="E-BOOK" /></a></dt>
-                <dd id="t2"><a href="#"><img src="images/ban02.jpg" alt="제주시후원나눔. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dㅇ>
+                <dd id="t2"><a href="#"><img src="images/ban02.jpg" alt="제주시후원나눔. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dd>
                 
                 <dt><a href="#t3" class="tab"><img src="images/num03.gif" alt="E-BOOK" /></a></dt>
-                <dd id="t3"><a href="#"><img src="images/ban03.jpg" alt="노인복지정책. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dㅇ>
+                <dd id="t3"><a href="#"><img src="images/ban03.jpg" alt="노인복지정책. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dd>
                 
                 <dt><a href="#t4" class="tab"><img src="images/num04.gif" alt="E-BOOK" /></a></dt>
-                <dd id="t4"><a href="#"><img src="images/ban04.jpg" alt="자원봉사안내. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dㅇ>
+                <dd id="t4"><a href="#"><img src="images/ban04.jpg" alt="자원봉사안내. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dd>
                 
                 <dt><a href="#t5" class="tab"><img src="images/num05.gif" alt="E-BOOK" /></a></dt>
-                <dd id="t5"><a href="#"><img src="images/ban05.jpg" alt="다자녀가구지원혜택. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dㅇ>
+                <dd id="t5"><a href="#"><img src="images/ban05.jpg" alt="다자녀가구지원혜택. 매월 발행하는 제주 사회 복지신문을 E-BOOK 형태로 보실 수 있습니다." /></a></dd>
             </dl>
             <!-- //tab_banner -->
             <!-- 관련정보안내 -->
-            <h3>관련정보안내</h3>
+            <h3 class="blind">관련정보안내</h3>
             <div>
                 <h4>사회복지지표, 회원현황보기</h4>
                 <ul>
                     <li><a href="#"><img src="images/info_banner01.gif" alt="사회복지지표" /></a></li>
                     <li><a href="#"><img src="images/info_banner02.gif" alt="회원현황보기" /></a></li>
                 </ul>
-                <h4>봉사회카페홈페이지, 복지행사계획표</h4>
+                <h4 class="blind">봉사회카페홈페이지, 복지행사계획표</h4>
                 <ul>
-                    <li><a href="#"><img src="images/link1.gif" alt="봉사회카페홈페이지"" /><img src="images/btn_go.gif" alt="봉사회카페홈페이지 바로가기" /></a></li>
+                    <li><a href="#"><img src="images/link1.gif" alt="봉사회카페홈페이지" /><img src="images/btn_go.gif" alt="봉사회카페홈페이지 바로가기" /></a></li>
                     <li><a href="#"><img src="images/link2.gif" alt="복지행사계획표" /></a><img src="images/btn_go.gif" alt="복지행사계획표 바로가기" /></li>
                 </ul>
                 <form action="/" method="POST">
                     <fieldset>
-                        <legend>시설검색하기</legend>
+                        <legend class="blind">시설검색하기</legend>
                         <select name="" id="">
                             <option value="facility">시설</option>
                             <option value="">기관</option>
                         </select>
                         <input type="text" />
-                        <input type="image" src="images/btn_search2.gif" title="검색하기" />
+                        <input type="image" src="images/btn_search2.gif" alt="검색하기" />
                         <select name="" id="">
                             <option value="#">파란비둘기증시회</option>
                         </select>
@@ -312,12 +329,14 @@
     <hr />
     <!-- footer -->
     <div id="footer">
-<p><a href="#"><img src="images/f_logo.gif" alt="정확하고 가치있는 복지정보 제주특별자치도사회복지협의회" /></a></p>
-<address>
-    <a href="#"><img src="images/address.gif" alt="제주특별자치도 제주시 화북1동 1112-1 사회복지협의회 회관. TEL.064)702~37834, 726-5786 FAX.064)702-3383" /></a>
-    <a href="#"><img src="images/copyright.gif" alt="Copyright 2006 by jeju council on Social Welfare All Rights Reserved" /></a>
-</address>
+        <p><a href="#"><img src="images/f_logo.gif" alt="정확하고 가치있는 복지정보 제주특별자치도사회복지협의회" /></a></p>
+        <address>
+            <a href="#"><img src="images/address.gif" alt="제주특별자치도 제주시 화북1동 1112-1 사회복지협의회 회관. TEL.064)702~37834, 726-5786 FAX.064)702-3383" /></a>
+            <a href="#"><img src="images/copyright.gif" alt="Copyright 2006 by jeju council on Social Welfare All Rights Reserved" /></a>
+        </address>
     </div>
     <!-- //footer -->
+</div>
+<!-- //wrap -->
 </body>
 </html>
