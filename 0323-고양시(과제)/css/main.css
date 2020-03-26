@@ -1,0 +1,24 @@
+/* 리셋연결 */
+@import url("../css/reset.css");
+
+/* common */
+body {
+    font-size: 12px;
+    font-family: Dotum, "돋움", sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    text-decoration: underline
+}
+/* layout */
+/* header */
+/* 로고 */
+/* 탑메뉴 */
+/* 주메뉴 */
