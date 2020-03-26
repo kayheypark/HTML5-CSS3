@@ -37,7 +37,7 @@ function tabMenuClick() {
 		if (currentmenu) {
 			currentmenu.targetEl.style.display = "none";
 			if (currentmenu.imgEl) {
-				currentmenu.imgEl.src = currentmenu.imgEl.src.replace("_on.gif",".gif");
+				currentmenu.imgEl.src = currentmenu.imgEl.src.replace("on.gif","off.gif");
 			} else {
 				currentmenu.className = currentmenu.className.replace(" on", "");
 			}
@@ -45,7 +45,7 @@ function tabMenuClick() {
 
 		this.targetEl.style.display = "block";
 		if (this.imgEl) {
-			this.imgEl.src = this.imgEl.src.replace(".gif","_on.gif");
+			this.imgEl.src = this.imgEl.src.replace("off.gif","on.gif");
 		} else {
 			this.className += " on";
 		}

@@ -78,5 +78,18 @@ border-right: none;
 }
 
 /* 공지사항 */
+dl.tab_noti {position: relative; width: 381px; height: 125px;
+            background: url(../images/bg_mboard_cate.gif) repeat-x 0 0;}
+dl.tab_noti dt {float: left;}
+dl.tab_noti dd { position: absolute; top: 35px; left: 0; width: 381px;}
+dl.tab_noti dd ul li {line-height: 170%;}
+dl.tab_noti dd ul li span {color: olive; font-size: 11px;padding: 0 15px;}
+dl.tab_noti dd p.more {position: absolute; top: -27px; right: 0;}
+
 /* 의정활동갤러리 */
+div.gallery {}
+div.gallery h3 {width: 381px; height: 33px;
+    background: url(../images/bg_gbox_tp.gif) no-repeat 0 0;}
+div.gallery ul {}
+div.gallery p.more {}
 /* 배너 */
