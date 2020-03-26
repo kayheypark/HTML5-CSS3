@@ -13,8 +13,3 @@ abbr,acronym{border:none;}
 img,input{vertical-align:middle;}
 hr{display:none;}
 #skipNavi,.blind{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;visibility:hidden;}
-
-
-/* html5 reset.css */
-small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,time,mark,audio,video{margin: 0;padding: 0;}
-article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display: block;}
