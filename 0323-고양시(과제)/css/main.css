@@ -18,6 +18,14 @@ a:hover {
     text-decoration: underline
 }
 /* layout */
+#wrap {width: 100%;}
+    #header {width: 980px; height: 93px; margin: 0 auto; border: 1px solid red;}
+    #container {width: 980px; margin: 0 auto; border: 1px solid green;}
+        .mainFlash {}
+        #content {}
+        #quick {}
+    #footer {width: 100%; border-top: 1px solid olive;}
+        #foot_inner {width: 980px; height: 109px; margin: 0 auto; border: 1px solid blue;}
 /* header */
 /* 로고 */
 /* 탑메뉴 */
