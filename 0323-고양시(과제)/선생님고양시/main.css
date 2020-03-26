@@ -1,0 +1,98 @@
+@import url(reset.css);
+/* main.css */
+
+/* common */
+body{font-size:12px;font-family:Dotum,"돋움",sans-serif;
+	color:#777;text-align:center;}
+a{text-decoration:none;color:#777;}
+a:hover{text-decoration:underline;}
+
+/* layout */
+#wrap{width: 100%;background: url(../images/bg_body.gif) repeat-x 0 0;text-align: left;}
+	#header{position: relative; width: 980px;height: 93px; margin: 0 auto;}
+	#container{position: relative; width: 980px;margin: 0 auto;}
+	#container:after{content: "";display: block;clear: both;}
+		.mainFlash{float: left;width: 480px;height: 510px;}
+		#content{float: left;width: 381px;}
+		.quick{position: absolute;right: 40px;}
+	#footer{width: 100%;border-top: 1px solid olive;}
+		.foot_inner{width: 955px;height: 79px; margin: 0 auto;padding: 30px 0 0 25px;}
+
+/* header */
+/* 로고 */
+h1.logo{position: absolute;left: 0;top: 0;}
+
+/* 탑메뉴 */
+dl.topMenu{text-align: right;}
+dl.topMenu dd,dl.topMenu dt.t{display: inline;}
+
+/* 주메뉴 */
+ul.gnb{position: relative; float: right;padding-left: 18px;
+		background: url(../images/bg_lnb.gif) no-repeat 0 0;}
+ul.gnb li{float: left;}
+ul.gnb li ul{display: none; position: absolute;left: 0;top: 45px;}
+ul.gnb li ul.menu1{left: 0;}
+ul.gnb li ul.menu2{left: 30px;}
+ul.gnb li ul.menu3{left: 100px;}
+ul.gnb li ul.menu4{left: 130px;}
+ul.gnb li ul.menu5{left: 340px;}
+ul.gnb li ul.menu6{left: 350px;}
+ul.gnb li ul.menu7{left: 330px;}
+ul.gnb li ul.menu8{left: 550px;}
+ul.gnb li ul.menu9{left: 390px;}
+/* 
+ul.gnb li:first-child ul{}
+ul.gnb li:nth-child(2) ul{}
+ul.gnb li:nth-child(3) ul{}
+ul.gnb li:last-child ul{}	
+ */
+ul.gnb li ul li{padding-right: 10px;}
+ul.gnb li ul li a{color: #816d15;}
+
+/* container */
+/* content */
+
+/* 통합검색 */
+form.tsearch{width: 371px;height: 32px;margin: 15px 0;text-align: right;
+			padding-right:10px;padding-top:5px;
+			background: url(../images/bg_mainsearch.gif) no-repeat 0 0;}
+.input_txt,input[type="search"]{width: 230px;height: 22px;
+			border: 1px solid #98a948;border-right: none;}
+
+/* 공지사항 */
+dl.tab_noti{position: relative;width: 381px;height: 125px;
+			background: url(../images/bg_mboard_cate.gif) repeat-x 0 0;}
+dl.tab_noti dt{float: left;}
+dl.tab_noti dd{position: absolute;left: 0;top: 35px;width: 381px;}
+dl.tab_noti dd ul li{line-height: 170%;}
+dl.tab_noti dd ul li span{color: olive;font-size: 11px;padding:0 15px;}
+dl.tab_noti dd p.more{position: absolute;right: 0;top: -27px;}
+
+/* 의정활동갤러리 */
+div.gallery{position: relative; width: 381px;margin-bottom: 14px;
+			background: url(../images/bg_gbox_ct.gif) repeat-y 0 0;}
+div.gallery h3{width: 370px;height: 27px;padding-left: 11px;padding-top: 6px;
+			background: url(../images/bg_gbox_tp.gif) no-repeat 0 0;}
+div.gallery ul{width: 381px;padding-bottom: 10px;
+			background: url(../images/bg_gbox_bt.gif) no-repeat 0 100%;}
+div.gallery ul:after{content: "";display: block;clear: both;}
+div.gallery ul li{float: left;margin-left: 20px;text-align: center;font-weight: bold;}
+div.gallery ul li span{display: block; width: 94px;height: 81px;
+				background: url(../images/bg_gall_photo.gif) no-repeat 0 0;
+				text-align: center;}
+div.gallery p.more{position: absolute;right: 10px;top:6px;}
+
+/* 배너 */
+ul.banner{width: 381px;}
+ul.banner li{float: left;padding-right: 2px;}
+
+/* footer */
+/* foot_inner */
+address{float: left;padding-right: 20px;}
+div.arrow{float: left;}
+
+div.arrow p{float: left;margin-right: 5px;}
+div.arrow p strong{display: block;}
+
+div.arrow ul{float: left;}
+div.arrow ul li{float: left;}
