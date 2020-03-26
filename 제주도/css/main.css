@@ -21,16 +21,16 @@ a:hover {
 }
 /* layout */
 #wrap {}
-#header {width: 1000px;margin: 0 auto;}
+#header {width: 1280px;margin: 0 auto;}
     h1.logo {}
         .gnb {}
 #header:after {content: ""; display: block; clear: both;}
-#container {width: 1000px; padding-top: 50px; margin: 0 auto;}
-    div.content1 {float: left; width: 628px; }
-    div.content2 {float: left; width: 372px; }
+#container {width: 1280px; padding-top: 50px; margin: 0 auto;}
+    div.content1 {float: left; width: 700px; border: 1px solid red;}
+    div.content2 {float: left; width: 528px; border: 1px solid red;}
     .site_all {}
         .site_inner {}
-#footer {width: 1000px; margin: 0 auto; border: 1px solid blue;}
+#footer {width: 1280px; margin: 0 auto; border: 1px solid blue;}
 /* header */
 
 /* 로고 */
@@ -60,6 +60,7 @@ input[type="image"] {margin-bottom: 9px;}
 
 /* containter */
 /* content1 */
+.content1 img {margin-bottom: 35px;}
 /* 로그인 */
 .login {float: left; width: 230px;  margin-top: 15px;}
 /* 로그인왼쪽정렬묶음(ID,PW) */
@@ -79,10 +80,15 @@ div.login_left input {width: 130px;}
 
 
 /* 공지사항 */
-.tab_noti {position: relative; float: left; margin-top: 15px;  width: 360px;}
-.tab_noti dt {float: left;}
-.tab_noti dd {position: absolute; top: 40px;}
-.tab_noti dd ul li {padding-left: 10px; line-height: 20px;}
-.tab_noti p.more {position: absolute; top: 0; right: 0;}
+
+
+dl.tab_noti { margin-top: 15px; margin-left: 10px; float: left; position: relative; width: 381px; height: 125px;
+   }
+dl.tab_noti dt {float: left;}
+dl.tab_noti dd { position: absolute; top: 35px; left: 0; width: 381px;}
+dl.tab_noti dd ul  {width: 400px;}
+dl.tab_noti dd ul li {line-height: 170%;}
+dl.tab_noti dd ul li span {color: olive; font-size: 11px;padding: 0 15px; float: right;}
+dl.tab_noti dd p.more {position: absolute; top: -27px; right: 0;}
 
 /* 의정활동갤러리 */
