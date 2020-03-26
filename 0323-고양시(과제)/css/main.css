@@ -19,7 +19,7 @@ a:hover {
 }
 /* layout */
 #wrap {width: 100%; background: url(../images/bg_body.gif) repeat-x 0 0; text-align: left;}
-    #header {position: relative; width: 980px; height: 93px; margin: 0 auto; border: 1px solid red;}
+    #header {position: relative; width: 980px; height: 93px; margin: 0 auto;}
     #container {position: relative; width: 980px; margin: 0 auto; border: 1px solid green;}
     #container:after {content: ""; display: block; clear: both;}
         .mainFlash {float: left; width: 480px; height: 510px; border: 1px solid yellow;}
@@ -34,7 +34,7 @@ h1.logo {position: absolute; top: 0; left: 0;}
 dl.topMenu {text-align: right;}
 dl.topMenu dd, dl.topMenu dt.t {display: inline;}
 /* 주메뉴 */
-ul.gnb {position: relative; float: right;}
+ul.gnb {position: relative; float: right; padding-left: 18px; background: url(../images/bg_lnb.gif) no-repeat 0 0;}
 ul.gnb li {float: left;}
 ul.gnb li ul {display: none; position: absolute; left: 0; top: 45px;}
 ul.gnb li ul.menu1 {left: 0px;}
@@ -46,3 +46,12 @@ ul.gnb li ul.menu6 {left: 350px;}
 ul.gnb li ul.menu7 {left: 330px;}
 ul.gnb li ul.menu8 {left: 550px;}
 ul.gnb li ul.menu9 {left: 390px;}
+
+ul.gnb li ul li {padding-right: 10px;}
+ul.gnb li ul li a {color: #816d15;}
+
+
+/* containter */
+/* content */
+/* 통합검색 */
+/* 공지사항 */
