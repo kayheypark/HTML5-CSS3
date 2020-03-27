@@ -132,7 +132,7 @@ div.info form  fieldset { width: 150px; margin-top: 10px;}
 
 /* 관련사이트 */
 .site_all {clear: both; background: #eae9ee; padding: 15px 0;}
-.site_inner {width: 1000px;}
+.site_inner {width: 1000px; margin: 0 auto;}
 .site_inner:after {content: ""; display: block; clear: both;}
 
     /* 레이아웃 */
